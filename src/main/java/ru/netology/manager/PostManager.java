@@ -1,9 +1,12 @@
 package ru.netology.manager;
 
-public class PostManager {
-    private Post[] posts;
+import ru.netology.domain.post;
 
-    public Post[] search(int ownerID, String domain, String query, boolean ownersOnly, byte count, int offset) {
+public class PostManager {
+
+    private post[] posts;
+
+    public post[] search(int ownerID, String domain, String query, boolean ownersOnly, byte count, int offset) {
         return null;
     }
 
