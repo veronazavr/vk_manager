@@ -1,6 +1,6 @@
 package ru.netology.domain.attachment;
 
-public class page {
+public class Page {
 
     int id;
     int groupID;
