@@ -1,33 +1,23 @@
 package ru.netology.domain;
 
-public class Post {
 
+public class Post {
+//Post info
     private int id;
     private int ownerID;
     private int fromID;
     private int createdBy;
     private int date;
+    private String geo;
     private String mainText;
+    private int signerID;
     private int replyOwnerID;
     private int replyPostID;
+    private String copyright;
+
+//    security
     private boolean friendsOnly;
     private String commentButton;
-    private int commentCount;
-    private boolean commentCanPost;
-    private boolean commentCanClose;
-    private boolean commentCanOpen;
-    private String copyright;
-    private int likesCount;
-    private boolean userLikes;
-    private boolean canLike;
-    private boolean canPublish;
-    private int repostsCount;
-    private boolean userReposted;
-    private int viewsCount;
-    private String postType;
-    private String postSource;
-    private String geo;
-    private int signerID;
     private boolean canPin;
     private boolean canDelete;
     private boolean canEdit;
@@ -35,6 +25,36 @@ public class Post {
     private boolean markedAsAd;
     private boolean favorite;
     private int postponedID;
+
+//    comments
+    private int commentCount;
+    private boolean commentCanPost;
+    private boolean commentCanClose;
+    private boolean commentCanOpen;
+
+    public String PostComments(boolean canPost, boolean groupsCanPost, boolean canOpen) {
+        return null;
+    }
+//    Likes
+    private int likesCount;
+    private boolean userLikes;
+    private boolean canLike;
+    private boolean canPublish;
+
+    public String Postlikes (boolean userLikes, boolean canLike, boolean canPublish) {
+        return null;
+    }
+
+//    reposts
+    private int repostsCount;
+    private boolean userReposted;
+    private int viewsCount;
+    private String postType;
+    private String postSource;
+
+    public String reposts(int count, boolean userReposted) {
+        return null;
+    }
 
     public int getId() {
         return id;
