@@ -1,12 +1,36 @@
 package ru.netology.domain;
 
-public class PostSecurity {
+public class Security {
 
-//    security
+    //    security
     private boolean friendsOnly;
     private String commentButton;
     private boolean canPin;
     private boolean canDelete;
+    private boolean canEdit;
+    private boolean pinned;
+    private boolean markedAsAd;
+    private boolean favorite;
+    private boolean commentCanPost;
+    private boolean commentCanClose;
+    private boolean canLike;
+    private boolean canPublish;
+    private int postponedID;
+
+    public Security() {
+        friendsOnly = false;
+        commentButton = "comment";
+        canPin = true;
+        canDelete = true;
+        canEdit = true;
+        pinned = false;
+        markedAsAd = false;
+        favorite = false;
+        commentCanPost = true;
+        commentCanClose = true;
+        canLike = true;
+        canPublish = true;
+    }
 
     public boolean isFriendsOnly() {
         return friendsOnly;
@@ -80,9 +104,37 @@ public class PostSecurity {
         this.postponedID = postponedID;
     }
 
-    private boolean canEdit;
-    private boolean pinned;
-    private boolean markedAsAd;
-    private boolean favorite;
-    private int postponedID;
+    public boolean isCommentCanPost() {
+        return commentCanPost;
+    }
+
+    public void setCommentCanPost(boolean commentCanPost) {
+        this.commentCanPost = commentCanPost;
+    }
+
+    public boolean isCommentCanClose() {
+        return commentCanClose;
+    }
+
+    public void setCommentCanClose(boolean commentCanClose) {
+        this.commentCanClose = commentCanClose;
+    }
+
+    public boolean isCanLike() {
+        return canLike;
+    }
+
+    public void setCanLike(boolean canLike) {
+        this.canLike = canLike;
+    }
+
+    public boolean isCanPublish() {
+        return canPublish;
+    }
+
+    public void setCanPublish(boolean canPublish) {
+        this.canPublish = canPublish;
+    }
 }
+
+

@@ -1,6 +1,6 @@
 package ru.netology.domain;
 
-public class PostRepost {
+public class Repost {
     private int repostsCount;
     private boolean userReposted;
     private int viewsCount;
